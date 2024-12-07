@@ -51,6 +51,13 @@
   border-bottom: 1px solid #e0e0e0;
 }
 
+
+
+/* Agregar bordes solo a columnas específicas (opcional si lo deseas) */
+.material-table tbody tr td:not(:last-child) {
+  border-right: 1px solid #e0e0e0; /* Bordes verticales si es necesario */
+}
+
 /* Estilo de botones */
 .action-btn {
   background-color: #006991;
@@ -64,4 +71,14 @@
 
 .action-btn:hover {
   background-color: #018786;
+}
+
+.bg-image {
+	background-image: url('fondo_login.jpg'); /* Cambia esto por la URL de tu imagen */
+	background-size: cover; /* La imagen cubrirá todo el contenedor */
+	background-position: center; /* Centra la imagen */
+	background-repeat: no-repeat; /* Evita que la imagen se repita */
+	color: white; /* Cambia el texto a blanco para mayor legibilidad (opcional) */
+	padding: 2rem; /* Ajusta el relleno para que el contenido tenga espacio */
+	border-radius: 1px; /* Si quieres bordes redondeados (opcional) */
 }
